@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import User from './User.svelte'
+  import UserSearch from './UserSearch.svelte'
   //   create container to hold users
   let users;
   //   run this function once the lifecyle method happens
@@ -20,6 +21,7 @@
 </script>
 
 <main>
+	<UserSearch />
 	<!-- loop through -->
 	{#if users}
 	<ul class="user-list">
