@@ -1,4 +1,5 @@
 <script>
+    import User from './User.svelte'
   let usernameQuery = "";
   let user = "";
   //   search for user on form submission
@@ -7,7 +8,7 @@
     fetch(`https://api.github.com/users/${usernameQuery}`)
       .then((res) => res.json())
       .then((data) => {
-        //   console.log(data);
+          console.log(data);
         user = data;
       });
   }
@@ -22,7 +23,12 @@
       <input type="text" bind:value={usernameQuery} />
       <button>Search</button>
     </form>
-    {usernameQuery}
+  </div>
+  <!-- display search result -->
+  <div>
+    {#if user}
+    <User username={user.login} avatar={user.avatar_url} />
+  {/if}
   </div>
 </main>
 
