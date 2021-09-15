@@ -22,7 +22,7 @@
 <main>
 	<!-- loop through -->
 	{#if users}
-	<ul>
+	<ul class="user-list">
 		{#each users as user}
 		<li>
 			<User username={user.login}  avatar={user.avatar_url}/>
@@ -34,4 +34,15 @@
 </main>
 
 <style>
+	.user-list{
+		display: flex;
+		flex-flow: wrap;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.user-list li{
+		width: 20%;
+		padding: 10px;
+	}
 </style>
