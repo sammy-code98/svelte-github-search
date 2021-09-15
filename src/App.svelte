@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import User from './User.svelte'
   //   create container to hold users
   let users;
   //   run this function once the lifecyle method happens
@@ -23,7 +24,9 @@
 	{#if users}
 	<ul>
 		{#each users as user}
-		<li>{user.login}</li>
+		<li>
+			<User username={user.login}  avatar={user.avatar_url}/>
+		</li>
 		{/each}
 	</ul>
 	{/if}
