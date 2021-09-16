@@ -48,13 +48,9 @@
 		padding: 10px;
 	}
 
-	/* media queries */
-	/* @media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {
 		.user-list{
-			display: flex;
+			padding: 20px;
 		}
-		.user-list li{
-			width: 100%;
-		}
-	} */
+	}
 </style>
