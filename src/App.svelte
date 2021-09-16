@@ -47,4 +47,14 @@
 		width: 20%;
 		padding: 10px;
 	}
+
+	/* media queries */
+	/* @media screen and (max-width: 480px) {
+		.user-list{
+			display: flex;
+		}
+		.user-list li{
+			width: 100%;
+		}
+	} */
 </style>

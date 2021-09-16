@@ -60,4 +60,18 @@
     background: #fff;
     cursor: pointer;
   }
+
+  	@media screen and (max-width: 480px) {
+      .user-search{
+        padding: 5px;
+      }
+      form{
+        transform: translateX(10%);
+      }
+      button{
+        width: 80%;
+        margin-left: 0px;
+      }
+    }
+
 </style>
